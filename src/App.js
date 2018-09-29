@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
-import './styles/css/main.css';
 import { Route } from 'react-router-dom';
 import HomePage from './components/pages/HomePage';
-import LoginPage from './components/pages/loginPage';
+import LoginPage from './components/pages/LoginPage';
 
 class App extends Component {
   
   render() {
 
     return (
-      <div>
+      <div className="container">
         <Route path="/" exact component={HomePage}/>
         <Route path="/login" exact component={LoginPage}/>
       </div>      
